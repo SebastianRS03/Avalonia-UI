@@ -1,0 +1,139 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Project.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Project.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Project">
+        <StackPanel>
+			<TextBlock Name="txtPrint" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+			<Button Name=" btnToTree" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick6"
+					Content="Tree"/>
+
+			<Button Name=" btnToGraph" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick7"
+					Content="Graph"/>
+
+			<Button Name=" btnEXit" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick9"
+					Content="Exit"/>
+			
+			<Button Name=" btnGraph" Width="160"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Center"
+		        Click="OnButtonClick"
+		        Content="Print"/>
+			
+			<Button Name=" btnShortest" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick2"
+					Content="Shortest path"/>
+
+			<Button Name=" btnDepth" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick3"
+					Content="DFS"/>
+
+			<Button Name=" btnBreadth" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick4"
+					Content="BFS"/>
+
+			<Button Name=" btnNode" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick5"
+					Content="Print"/>
+
+			<Button Name=" btnBack" Width="160"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					Click="OnButtonClick8"
+					Content="Go Back"/>
+
+			<TextBox Name="txtAddNode" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name=" btnAddNode" Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="AddNode"
+					Content="Add node"/>
+
+			<TextBox Name="txtDeleteNode" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name=" btnDeleteNode" Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="DeleteNode"
+					Content="Delete node"/>
+
+			<TextBox Name="txtSearch" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name=" btnSearch" Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="SearchNode"
+					Content="Serach node"/>
+
+			<TextBox Name="txtTraverse" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name=" btnTraverse" Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="TraverseTree"
+					Content="Traverse tree"/>
+
+			<TextBox Name="txtLevel" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name=" btnLevelr" Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="LevelNode"
+					Content="Level of node"/>
+			
+			<TextBox Name="txtSource1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<TextBox Name="txtDirection1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200"/>
+			<TextBox Name="txtWeight1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+			<Button Name="AddEdge" 
+					Width="100"
+					HorizontalAlignment="Center" 
+					VerticalAlignment="Center"
+					Click="enterEdge"
+					Content="Add edge"/>
+
+			<TextBox Name="txtSource2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<TextBox Name="txtDirection2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200"/>
+			<Button Name="DeleteEdge"
+					Width="100"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="deleteEdge"
+					Content="Delete edge"/>
+
+			<TextBox Name="txtData1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name="AddVertex"
+					Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="AddVertexButton"
+					Content="Add vertex" />
+
+			<TextBox Name="txtData2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+			<Button Name="DeleteVertex"
+					Width="160"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Click="DeleteVertexButton"
+					Content="Delete vertex" />
+			
+		</StackPanel>
+
+	</Window>
